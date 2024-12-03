@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שעון זמניות</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>שעון זמניות</h1>
+    <!-- שעון רגיל -->
+    <div class="clock-container" id="regularClock">
+        <div class="title-display">שעון רגיל</div>
+        <div class="time-display" id="regularTime">טוען...</div>
+        <div class="date-display" id="regularDate">טוען תאריך...</div>
+    </div>
+    <!-- שעון זמניות -->
+    <div class="clock-container" id="hebrewClock">
+        <div class="title-display">שעון זמניות</div>
+        <div class="time-display" id="hebrewTime">טוען...</div>
+        <div class="date-display" id="hebrewDate">{{ hebrew_date }}</div>
+    </div>
+    
+    <!-- הגדרת משתנים גלובליים ל-sunrise ו-sunset -->
+    <script>
+        const sunrise = new Date("{{ sunrise }}");
+        const sunset = new Date("{{ sunset }}");
+    </script>
+    
+    <!-- טעינת קובץ ה-JavaScript -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

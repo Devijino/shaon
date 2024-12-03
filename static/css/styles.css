@@ -1,0 +1,44 @@
+body {
+    font-family: 'Alef', sans-serif;
+    direction: rtl;
+    text-align: center;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 20px 0;
+    color: #00796b;
+}
+.clock-container {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+.time-display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #004d40;
+}
+.date-display {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #00695c;
+}
+.title-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+.daytime {
+    background-color: #fff9c4; /* צהוב */
+}
+.nighttime {
+    background-color: #bbdefb; /* כחול */
+}
